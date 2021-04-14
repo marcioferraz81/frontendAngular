@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { ICliente } from '../model/ICliente.module';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -10,7 +11,7 @@ import { EMPTY, Observable } from 'rxjs';
 })
 export class ClientesService {
 
-  private URL: string = 'http://localhost:3000/clientes';
+  private URL: string = environment.URL;
 
   constructor(private http: HttpClient, private toastr: ToastrService) { }
 
