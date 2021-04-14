@@ -1,0 +1,21 @@
+<div class="row mt-3">
+  <div class="col-md-12">
+    <h1>Atividade de Angular</h1>
+    <h4 class="text-danger">{{anuncio}}</h4>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-md-3">
+    <app-card-cliente [foto]="foto" [nome]="nome" [nascimento]="nascimento" [id]="id" [email]="email">
+    </app-card-cliente>
+
+  </div>
+  <div class="col-md-3">
+    <app-card-cliente
+      foto="https://contaazul-site-uploads.s3.amazonaws.com/uploads/2018/04/contaazul-ilustra-usuario.svg"
+      nome="Melissa" nascimento="2021-12-02" id="10" email="melissa@itu.com.br">
+    </app-card-cliente>
+
+  </div>
+</div>

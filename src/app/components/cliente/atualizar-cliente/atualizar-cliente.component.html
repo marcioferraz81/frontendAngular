@@ -1,0 +1,50 @@
+<h1 class="my-3 text-primary">Atualizar Cliente</h1>
+
+
+<div class="card shadow">
+  <form class="m-3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="nome">Nome do Cliente</label>
+          <input type="text" class="form-control" placeholder="Digite o nome do cliente" name="nomeCliente"
+            [(ngModel)]="cliente.nome">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="validade">Data de Nascimento</label>
+          <input type="date" class="form-control" name="nascimento" [(ngModel)]="cliente.nascimento">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="preco">E-mail</label>
+          <input type="email" class="form-control" placeholder="email@email.com" name="email" [(ngModel)]="cliente.email">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-default" routerLink="/clientes">
+          Voltar
+        </button>
+
+        <button class="btn btn-success float-right" (click)="salvarCliente()">
+          Salvar
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<!--
+<div class="card shadow mt-3">
+  <p>Nome: {{nome}}</p>
+  <p>Validade: {{validade | date: "dd/MM/yyyy"}}</p>
+  <p>Preço: {{preco | currency: "BRL"}}</p>
+</div>
+-->

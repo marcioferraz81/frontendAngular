@@ -1,0 +1,19 @@
+<div class="card">
+  <img [src]="foto" class="card-img-top" alt="CRUD">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{nome | uppercase}}
+      <!--
+      <span *ngIf="promocao, else elseBlock" class="badge badge-success">Promoção</span>
+      <ng-template #elseBlock>
+        <span class="badge badge-primary">Aproveite</span>
+      </ng-template>
+    -->
+    </h5>
+    <p class="card-text">
+      Identificação {{ id | number: '3.0-0'}} <br>
+      Validade: {{email}}
+    </p>
+    <a href="#" class="btn btn-primary float-right">{{nascimento | date: 'dd/MM/yyyy'}}</a>
+  </div>
+</div>
